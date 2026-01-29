@@ -1,0 +1,240 @@
+img.logo {
+  width: 30%;
+  min-width: 65px;
+  max-width: 80px;
+  display: inline-block;
+  vertical-align: middle;
+}
+.container-menu {
+  max-width: 100%;
+  width: 100%;
+  padding: 100px 20px; /* Add some padding to the container */
+  box-sizing: border-box; /* Include padding in the width calculation */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  overflow-x: hidden; /* Prevent horizontal overflow */
+}
+
+.icon-whatsapp {
+  color: rgba(0, 0, 0, 0.5);
+}
+.icon-l {
+  display: inline-block;
+  text-decoration: none;
+}
+
+.icon-facebook {
+  color: rgba(0, 0, 0, 0.5);
+}
+
+.icon-instagram {
+  color: rgba(0, 0, 0, 0.5);
+}
+
+.floating-btn {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  width: 45px;
+  height: 45px;
+  border-radius: 50%;
+  background-color: black;
+  color: #fff;
+  font-size: 20px; /* Adjust the font size as needed */
+  text-align: center;
+  line-height: 60px;
+  cursor: pointer;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+  z-index: 9999; /* Ensure the button is above other content */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.home-slider {
+  margin-top: 91px;
+}
+
+.portada,
+.menu {
+  max-width: 100%;
+  height: auto;
+  width: auto; /* Ensure images scale while maintaining aspect ratio */
+  margin: 10px auto; /* Center the images horizontally */
+  display: block; /* Ensure images behave as block elements */
+}
+
+.map-container {
+  width: calc(100% - 40px); /* 20px margin on both sides */
+  margin: 0 auto;
+  max-width: 800px; /* Adjust this value as needed */
+  padding-top: 20px; /* To maintain aspect ratio */
+  height: 350px; /* Desired height */
+}
+
+.map-container {
+  width: 100%;
+  height: 0;
+  padding-bottom: 56.25%; /* 16:9 aspect ratio */
+  position: relative;
+  margin-top: 10%; /* Adjust margin as needed */
+}
+
+.map-container iframe {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+}
+
+.main-text {
+  font-weight: 400;
+  font-style: normal;
+  word-wrap: break-word; /* Allow the text to wrap onto two lines */
+  font-size: 70px;
+}
+
+/* Define styles for the star icon */
+.star-icon {
+  color: #c8a97e; /* Change the color */
+  font-size: 26px; /* Change the size */
+  margin-top: 12px; /* Adjust the top margin */
+  margin-bottom: 12px; /* Adjust the bottom margin */
+}
+
+#section-counter {
+    background: linear-gradient(
+      90deg,
+      rgba(201, 135, 76, 0.18),
+      rgba(201, 135, 76, 0.06)
+    );
+    display: flex;
+    align-items: center;
+    min-height: 260px;
+    padding-top: 0;
+    padding-bottom: 0;
+    position: relative;
+    z-index: 0;
+  }
+
+#section-counter .container {
+  width: 100%;
+}
+
+#section-counter .row.d-md-flex {
+  align-items: center;
+  justify-content: center;
+}
+
+#section-counter .row.d-md-flex .row {
+  justify-content: center;
+}
+
+.ftco-counter {
+  padding-bottom: 0;
+}
+
+  @media screen and (max-width: 767.98px) {
+  #section-counter {
+      margin: 40px 0;
+    }
+
+  #section-counter .row.d-md-flex .row {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  #section-counter .counter-badge {
+    width: 100%;
+    justify-content: center;
+  }
+
+  #section-counter .counter-badge .block-18 {
+      width: 100%;
+      display: flex;
+      justify-content: center;
+    }
+  }
+
+  @media screen and (min-width: 768px) {
+    .counter-years .text {
+      text-align: center;
+    }
+  }
+
+.circle-avatar {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  background-color: grey; /* Google blue */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #ffffff; /* White text color */
+  font-size: 20px;
+  font-weight: bold;
+}
+
+@media screen and (max-width: 1366px) {
+  .main-text {
+    font-size: 65px; /* Adjust font size for smaller screens */
+  }
+  .mySlides img {
+    height: 350px;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .main-text {
+    font-size: 60px; /* Adjust font size for tablets */
+  }
+  .mySlides img {
+    height: 335px;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .main-text {
+    font-size: 50px; /* Adjust font size for mobile devices */
+  }
+  .mySlides img {
+    height: 300px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .map-container {
+    width: 95%;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .map-container {
+    width: 83%;
+  }
+}
+
+@media screen and (min-width: 1366px) {
+  .map-container {
+    width: 75%;
+    margin-top: 3%; /* Adjust as needed */
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .container-menu {
+    padding: 0 10px; /* Reduce padding on smaller screens */
+  }
+  .portada,
+  .menu {
+    max-width: 100%;
+  }
+}
+
+@media screen and (min-width: 601px) and (max-width: 1024px) {
+  .container-menu {
+    padding: 0 15px; /* Adjust padding for tablets */
+  }
+}
